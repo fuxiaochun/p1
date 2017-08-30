@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sp": "git subtree pull --prefix=config/flame git@github.com:fuxiaochun/flame.git master",
-    "publish": "git subtree push --prefix=config/flame git@github.com:fuxiaochun/flame.git master"
+    "publish": "git subtree split --rejoin --prefix=config/flame --branch newflame && git push git@github.com:fuxiaochun/flame.git newflame:master"
   },
   "repository": {
     "type": "git",
